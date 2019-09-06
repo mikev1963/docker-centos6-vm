@@ -1,0 +1,11 @@
+version: '3'
+services:
+  centos6:
+    image: mikev1963/docker-centos6-vm
+    container_name: centos6
+    hostname: centos6
+    privileged: true
+    ports:
+      - '2223:22'
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup
