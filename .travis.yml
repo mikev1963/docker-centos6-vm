@@ -13,12 +13,6 @@ script:
   # Test running the container.
   - docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro docker-vm
 
-  # Verify that `ansible` user exists and is a sudoer
-  - docker exec --tty test-container env TERM=xterm sudo -u ${ANSIBLE_USER} sudo -v
-
-  # Verify Ansible is available in the container.
-  - docker exec --tty test-container env TERM=xterm ansible --version
-
 after_success:
   - if [[ "$TRAVIS_BRANCH" == "master" ]]; then
       docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD ;
