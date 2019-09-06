@@ -28,7 +28,6 @@ You can ssh into the container one of two ways:
 
   2. Add the following to your <userid>/.ssh/config file:
 
-     # Centos 6 Server
      host centos6
      HostName <hostname> of your client machine or localhost
      port 2223
