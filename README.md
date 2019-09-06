@@ -27,7 +27,7 @@ You can ssh into the container one of two ways:
 
      ```
      host centos6
-     HostName <hostname> of your client machine or localhost
+     HostName <hostname> or localhost
      port 2223
      ```
 
