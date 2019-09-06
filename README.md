@@ -19,6 +19,20 @@ This image is built on Docker Hub automatically any time the upstream OS contain
   4. Start the container:
      docker-compose up -d
 
+## How to Use
+
+You can ssh into the container one of two ways:
+  1. ssh localhost -p 2223
+
+         or
+
+  2. Add the following to your <userid>/.ssh/config file:
+
+     # Centos 6 Server
+     host centos6
+     HostName <hostname> of your client machine or localhost
+     port 2223
+
 ## Author
 
 Created in 2016 by Michael A. Ventarola
