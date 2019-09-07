@@ -1,6 +1,6 @@
 #!/bin/sh
 
-USER_LIST="ansible mikev1963"
+USER_LIST="ansible"
 SUDO_GROUP=wheel
 
 OSTYPE="`lsb_release -d |awk '{print $2}'`"
